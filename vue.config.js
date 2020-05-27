@@ -36,12 +36,10 @@ module.exports = {
       warnings: false,
       errors: true
     },
-    proxy: 
-
+    proxy: {
       '/oper': {
         target: 'http://oper.ppdai.com'
       }
-    
     },
     before: require('./mock/mock-server.js')
   },
