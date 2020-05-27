@@ -36,6 +36,13 @@ module.exports = {
       warnings: false,
       errors: true
     },
+    proxy: 
+
+      '/oper': {
+        target: 'http://oper.ppdai.com'
+      }
+    
+    },
     before: require('./mock/mock-server.js')
   },
   configureWebpack: {
